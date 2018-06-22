@@ -12,6 +12,7 @@ function arrayBuilder(...dims){
     throw new Error('Missing arguments');
   }
   return dimBuilder(0);
+  
   function dimBuilder(index){
     let arr = [];
     if(index < dims.length-1){
@@ -27,4 +28,3 @@ function arrayBuilder(...dims){
     return arr;
   }
 }
-
