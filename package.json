@@ -1,0 +1,28 @@
+{
+  "name": "hypera",
+  "version": "1.0.0",
+  "description": "Simple to use module for creating multi-dimensional arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fry98/hypera.git"
+  },
+  "keywords": [
+    "hyper",
+    "cube",
+    "hypercube",
+    "hypera",
+    "array",
+    "hyperarray",
+    "matrix"
+  ],
+  "author": "Fry98",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fry98/hypera/issues"
+  },
+  "homepage": "https://github.com/Fry98/hypera#readme"
+}
