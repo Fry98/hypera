@@ -8,26 +8,23 @@ module.exports = function(defVal){
 }
 
 function arrayBuilder(...dims){
-  let array = [];
-  let result;
-  for(let i = 0; i < dims[dims.length-1]; i++){
-    array.push(empty);
+  if(dims.length === 0){
+    throw new Error('Missing arguments');
   }
-  dimBuilder(array, dims.length-2);
-  return result;
-
-  function dimBuilder(filler, index){
-    if(index >= 0){
-      let dimUp = [];
+  return dimBuilder(0);
+  function dimBuilder(index){
+    let arr = [];
+    if(index < dims.length-1){
       for(let i = 0; i < dims[index]; i++){
-        
-        dimUp.push(filler);
+        arr.push(dimBuilder(index+1));
       }
-      dimBuilder(dimUp, index-1);
     }
     else{
-      result = filler;
+      for(let i = 0; i < dims[index]; i++){
+        arr.push(empty);
+      }
     }
+    return arr;
   }
 }
 
