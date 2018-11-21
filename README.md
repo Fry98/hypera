@@ -14,7 +14,7 @@ You can also pass in an argument that will serve as the default value for all th
 
 *(If no argument is passed, the default value will be set to ```null```.)*
 ```js
-const Hypera = require('ezhash')(false);
+const Hypera = require('hypera')(false);
 ```
 In this case, I'm setting the default value to ```false```.
 <br>
